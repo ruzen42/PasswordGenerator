@@ -1,0 +1,12 @@
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PasswordGenerator
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PasswordGenerator.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PasswordGenerator.deps.json
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PasswordGenerator.runtimeconfig.json
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PasswordGenerator.pdb
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/AtkSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/CairoSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/GdkSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/GioSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/GLibSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/GtkSharp.dll
+/home/ruzen42/Programing/CSharp/PasswordGenerator/publish/PangoSharp.dll

@@ -1,59 +1,116 @@
-using System.IO;
+using Gtk;
 
-class Program
+class PasswordGeneratorApp : Window
 {
-    static void Main()
+    bool AreDigits = false;
+    bool AreSigns = false;
+    bool AreHighRegister = false;
+
+    string chars = "abcdefghijklmnopqrstuvwxyz";
+    int lenght = 3;
+    Random rand = new Random();
+
+    private Label name = new Label("Password Generator v1.0");
+    private Entry password = new Entry();
+    private SpinButton lenghtEntry = new SpinButton(3, 16384, 1);
+    private Button AcceptButton = new Button("Generate:");
+
+    CheckButton SignButton = new CheckButton("Signs");
+    CheckButton HighButton = new CheckButton("High letters");
+    CheckButton DigitButton = new CheckButton("Digits");
+
+    private PasswordGeneratorApp() : base("Password Generator")
     {
-        string? line;
+        DeleteEvent += DeleteWindowEvent;
+        password.IsEditable = false;
+        password.Text = "";
+        AcceptButton.Clicked += Gen;
 
-        bool AreDigits = false;
-        bool AreSigns = false;
-        bool AreHighRegister = false;
+        Box vbox = new Box(Orientation.Vertical, 5);
 
-        try
+        vbox.PackStart(name, false, false, 0);
+        vbox.PackStart(password, false, false, 0);
+        vbox.PackStart(lenghtEntry, false, false, 0);
+        vbox.PackStart(SignButton, false, false, 0);
+        vbox.PackStart(HighButton, false, false, 0);
+        vbox.PackStart(DigitButton, false, false, 0);
+        vbox.PackStart(AcceptButton, false, false, 0);
+
+        Add(vbox);
+        ShowAll();
+    }
+
+    private static void Main()
+    {
+        Application.Init();
+
+        new PasswordGeneratorApp();
+
+        Application.Run();
+    }
+
+    private void DeleteWindowEvent(object o, EventArgs args)
+    {
+        Application.Quit();
+        Console.WriteLine("App closed");
+    }
+
+    private void Gen(object? o, EventArgs? args)
+    {
+        if (DigitButton.Active)
         {
-            StreamReader config = new StreamReader("config");
-
-            line = config.ReadLine();
-            if (line == "digit = true")
-            {
-                AreDigits = true;
-            }
-            line = config.ReadLine();
-            if (line == "high = true")
-            {
-                AreHighRegister = true;
-            }
-
-            line = config.ReadLine();
-            if (line == "sign = true")
-            {
-                AreSigns = true;
-            }
+            AreDigits = true;
         }
-        catch
+        else
         {
-            Console.WriteLine("Config file is lost");
+            AreDigits = false;
         }
 
-        string chars = "abcdefghijklmnopqrstuvwxyz";
+        if (SignButton.Active)
+        {
+            AreSigns = true;
+        }
+        else
+        {
+            AreSigns = false;
+        }
+
+        if (HighButton.Active)
+        {
+            AreHighRegister = true;
+        }
+        else
+        {
+            AreHighRegister = false;
+        }
+
+
+        lenght = Convert.ToInt32(lenghtEntry.Value);
+        string genpass = "";
         if (AreHighRegister) chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        else chars = "abcdefghijklmnopqrstuvwxyz";
         if (AreDigits) chars += "0123456789";
+        else chars = "abcdefghijklmnopqrstuvwxyz";
         if (AreSigns) chars += "()/*-+?№!@#$%^&*_=<>[]{}:;,.";
-        Console.Write("длина: ");
-        int length = Convert.ToInt32(Console.ReadLine());
+        else chars = "abcdefghijklmnopqrstuvwxyz";
+
+        if (AreHighRegister)
+            chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        if (AreDigits)
+            chars += "0123456789";
+
+        if (AreSigns)
+            chars += "()/*-+?№!@#$%^&*_=<>[]{}:;,.";
 
         char[] charArray = chars.ToCharArray();
-        Random rand = new Random();
-        string password = "";
 
-        for (int i = 1; i <= length; i++)
+        for (int i = 1; i <= lenght; i++)
         {
-            password = password + charArray[rand.Next(0, chars.Length)];
+            genpass = genpass + charArray[rand.Next(0, chars.Length)];
         }
 
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("Ваш пароль: " + password);
+        password.Text = genpass;
     }
 }
 
