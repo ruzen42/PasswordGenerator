@@ -10,10 +10,10 @@ class PasswordGeneratorApp : Window
     int lenght = 3;
     Random rand = new Random();
 
-    private Label name = new Label("Password Generator v1.0");
+    private Label name = new Label("Password Generator v1.2");
     private Entry password = new Entry();
     private SpinButton lenghtEntry = new SpinButton(3, 16384, 1);
-    private Button AcceptButton = new Button("Generate:");
+    private Button AcceptButton = new Button("Generate");
 
     CheckButton SignButton = new CheckButton("Signs");
     CheckButton HighButton = new CheckButton("High letters");
@@ -26,9 +26,9 @@ class PasswordGeneratorApp : Window
         password.Text = "";
         AcceptButton.Clicked += Gen;
 
-        Box vbox = new Box(Orientation.Vertical, 5);
+        Box vbox = new Box(Orientation.Vertical, 10);
 
-        vbox.PackStart(name, false, false, 0);
+        vbox.PackStart(name, true, true, 5);
         vbox.PackStart(password, false, false, 0);
         vbox.PackStart(lenghtEntry, false, false, 0);
         vbox.PackStart(SignButton, false, false, 0);
