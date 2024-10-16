@@ -10,7 +10,7 @@ class PasswordGeneratorApp : Window
     int lenght = 3;
     Random rand = new Random();
 
-    private Label name = new Label("Password Generator v1.1");
+    private Label name = new Label("Password Generator v1.2");
     private Entry password = new Entry();
     private SpinButton lenghtEntry = new SpinButton(3, 16384, 1);
     private Button AcceptButton = new Button("Generate");
