@@ -1,0 +1,2 @@
+/home/ruzen42/Programing/CSharp/PasswordGenerator/linux/PasswordGenerator.pdb
+/home/ruzen42/Programing/CSharp/PasswordGenerator/linux/PasswordGenerator

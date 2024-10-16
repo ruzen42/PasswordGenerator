@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8yiOc5YX1f7Bf4wuDP9Lv+UQ+t+42nbIW1d3VN0OlE8lFdsWXOZr7cPmQHiBuM9Sn34mWTMA30sDBkJhLx+zBA==",
+  "dgSpecHash": "oU6+/DGKZIgiGHRqdcHW0eNpemRH7WX8/30BTP5tFj3OwfIkZYJx1N64A9WZEo9L6WVarTfWynFWa8gRj0IWxw==",
   "success": true,
   "projectFilePath": "/home/ruzen42/Programing/CSharp/PasswordGenerator/PasswordGenerator.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,11 @@
     "/home/ruzen42/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512"
+    "/home/ruzen42/.nuget/packages/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.8/microsoft.netcore.app.runtime.linux-x64.8.0.8.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.8/microsoft.aspnetcore.app.runtime.linux-x64.8.0.8.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.8/microsoft.netcore.app.host.linux-x64.8.0.8.nupkg.sha512"
   ],
   "logs": []
 }
