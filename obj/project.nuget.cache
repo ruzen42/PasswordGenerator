@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "krV2D1vLGkoPhb2qPK7cPLXFPYjfSOktOKzb9crJASAFGnDTZWqqX6lTsQm4x7L/qG2JJP+/OKQNtXStKLbXDQ==",
+  "dgSpecHash": "crpFxNcl6w452tE2Sy3TPQ7tPEkzkFjWytsO95UAFwwqxbKrWWB9tV6M9knZucHdo/GYQuZN6gITZ9qYjwRihQ==",
   "success": true,
-  "projectFilePath": "/home/ruzen42/Programing/CSharp/PasswordGenerator/PasswordGenerator.csproj",
+  "projectFilePath": "/usr/src/debug/PasswordGenerator/PasswordGenerator.csproj",
   "expectedPackageFiles": [
     "/home/ruzen42/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
