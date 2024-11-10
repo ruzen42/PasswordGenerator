@@ -79,7 +79,7 @@
           "build/GtkSharp.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.10": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -177,7 +177,7 @@
           "build/GtkSharp.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.10": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -278,10 +278,10 @@
         "lib/netstandard2.0/GtkSharp.dll"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.8": {
-      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
+    "Microsoft.NET.ILLink.Tasks/8.0.10": {
+      "sha512": "xT8jYjlroY7SLbGtoV9vUTVW/TPgodL4Egc31a444Xe0TMytLZ3UlKQ0kxMZsy/CrWsFB6wtKnSG1SsXcWreew==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.8",
+      "path": "microsoft.net.illink.tasks/8.0.10",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -295,7 +295,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -346,7 +346,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "GtkSharp >= 3.24.24.95",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.10"
     ]
   },
   "packageFolders": {
@@ -393,7 +393,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.8, )",
+            "version": "[8.0.10, )",
             "autoReferenced": true
           }
         },
@@ -411,15 +411,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-            "version": "[8.0.8, 8.0.8]"
+            "version": "[8.0.10, 8.0.10]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.8, 8.0.8]"
+            "version": "[8.0.10, 8.0.10]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-            "version": "[8.0.8, 8.0.8]"
+            "version": "[8.0.10, 8.0.10]"
           }
         ],
         "frameworkReferences": {
@@ -427,7 +427,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
