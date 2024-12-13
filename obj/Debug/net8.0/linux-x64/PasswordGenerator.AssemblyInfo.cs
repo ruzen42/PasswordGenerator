@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PasswordGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95fada671666c1da887995430e6c2f40e2ae34b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5be8f145f9791b74672eafebc266f1950e5a5f0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PasswordGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PasswordGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

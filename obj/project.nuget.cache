@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "crpFxNcl6w452tE2Sy3TPQ7tPEkzkFjWytsO95UAFwwqxbKrWWB9tV6M9knZucHdo/GYQuZN6gITZ9qYjwRihQ==",
+  "dgSpecHash": "E226BXfIpi8=",
   "success": true,
-  "projectFilePath": "/usr/src/debug/PasswordGenerator/PasswordGenerator.csproj",
+  "projectFilePath": "/home/ruzen42/Documents/Programming/PasswordGenerator/PasswordGenerator.csproj",
   "expectedPackageFiles": [
     "/home/ruzen42/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
@@ -10,11 +10,13 @@
     "/home/ruzen42/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.net.illink.tasks/8.0.10/microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.10/microsoft.netcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.10/microsoft.aspnetcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.10/microsoft.netcore.app.host.linux-x64.8.0.10.nupkg.sha512"
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.11/microsoft.netcore.app.runtime.linux-x64.8.0.11.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.11/microsoft.aspnetcore.app.runtime.linux-x64.8.0.11.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.11/microsoft.netcore.app.host.linux-x64.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }

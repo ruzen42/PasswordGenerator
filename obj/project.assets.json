@@ -79,7 +79,7 @@
           "build/GtkSharp.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.10": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -177,7 +177,7 @@
           "build/GtkSharp.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.10": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -278,10 +278,10 @@
         "lib/netstandard2.0/GtkSharp.dll"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.10": {
-      "sha512": "xT8jYjlroY7SLbGtoV9vUTVW/TPgodL4Egc31a444Xe0TMytLZ3UlKQ0kxMZsy/CrWsFB6wtKnSG1SsXcWreew==",
+    "Microsoft.NET.ILLink.Tasks/8.0.11": {
+      "sha512": "zk5lnZrYJgtuJG8L4v17Ej8rZ3PUcR2iweNV08BaO5LbYHIi2wNaVNcJoLxvqgQdnjLlKnCCfVGLDr6QHeAarQ==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.10",
+      "path": "microsoft.net.illink.tasks/8.0.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -295,7 +295,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -346,7 +346,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "GtkSharp >= 3.24.24.95",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.10"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.11"
     ]
   },
   "packageFolders": {
@@ -355,12 +355,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/usr/src/debug/PasswordGenerator/PasswordGenerator.csproj",
+      "projectUniqueName": "/home/ruzen42/Documents/Programming/PasswordGenerator/PasswordGenerator.csproj",
       "projectName": "PasswordGenerator",
-      "projectPath": "/usr/src/debug/PasswordGenerator/PasswordGenerator.csproj",
+      "projectPath": "/home/ruzen42/Documents/Programming/PasswordGenerator/PasswordGenerator.csproj",
       "packagesPath": "/home/ruzen42/.nuget/packages/",
-      "outputPath": "/usr/src/debug/PasswordGenerator/obj/",
+      "outputPath": "/home/ruzen42/Documents/Programming/PasswordGenerator/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "/home/ruzen42/.nuget/NuGet/NuGet.Config"
       ],
@@ -380,6 +381,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -393,7 +399,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.10, )",
+            "version": "[8.0.11, )",
             "autoReferenced": true
           }
         },
@@ -410,16 +416,24 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-            "version": "[8.0.10, 8.0.10]"
+            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.10, 8.0.10]"
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-            "version": "[8.0.10, 8.0.10]"
+            "version": "[8.0.11, 8.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -427,7 +441,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

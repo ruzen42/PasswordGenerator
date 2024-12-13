@@ -1,117 +1,87 @@
 using Gtk;
 
-class PasswordGeneratorApp : Window
+internal class _PasswordGenerator : Window
 {
-    bool AreDigits = false;
-    bool AreSigns = false;
-    bool AreHighRegister = false;
+    private bool[] _settings = { false, false, false };
+    
+    /*
+     * _settings[0] is a digits
+     * _settings[1] is a signs
+     * _settings[2] is a high register character
+     */
 
-    string chars = "abcdefghijklmnopqrstuvwxyz";
-    int lenght = 3;
-    Random rand = new Random();
+    private string chars = "abcdefghijklmnopqrstuvwxyz";
+    private int _lenght = 3;
+    private Random _random = new Random();
 
-    private Label name = new Label("Password Generator v1.2");
-    private Entry password = new Entry();
-    private SpinButton lenghtEntry = new SpinButton(3, 16384, 1);
-    private Button AcceptButton = new Button("Generate");
+    private Label _name = new Label("Password Generator v1.2");
+    private Entry _password = new Entry();
+    private SpinButton _lenghtEntry = new SpinButton(3, 16384, 1);
+    private Button _acceptButton = new Button("Generate");
 
-    CheckButton SignButton = new CheckButton("Signs");
-    CheckButton HighButton = new CheckButton("High letters");
-    CheckButton DigitButton = new CheckButton("Digits");
+    private CheckButton _signButton = new CheckButton("Signs");
+    private CheckButton _highButton = new CheckButton("High letters");
+    private CheckButton _digitButton = new CheckButton("Digits");
 
-    private PasswordGeneratorApp() : base("Password Generator")
+    private _PasswordGenerator() : base("Password Generator")
     {
         DeleteEvent += DeleteWindowEvent;
-        password.IsEditable = false;
-        password.Text = "";
-        AcceptButton.Clicked += Gen;
+        _password.IsEditable = false;
+        _password.Text = "";
+        _acceptButton.Clicked += GeneratePassword;
 
-        Box vbox = new Box(Orientation.Vertical, 10);
+        var vbox = new Box(Orientation.Vertical, 10);
 
-        vbox.PackStart(name, true, true, 5);
-        vbox.PackStart(password, false, false, 0);
-        vbox.PackStart(lenghtEntry, false, false, 0);
-        vbox.PackStart(SignButton, false, false, 0);
-        vbox.PackStart(HighButton, false, false, 0);
-        vbox.PackStart(DigitButton, false, false, 0);
-        vbox.PackStart(AcceptButton, false, false, 0);
+        vbox.PackStart(_name, true, true, 5);
+        vbox.PackStart(_password, false, false, 0);
+        vbox.PackStart(_lenghtEntry, false, false, 0);
+        vbox.PackStart(_signButton, false, false, 0);
+        vbox.PackStart(_highButton, false, false, 0);
+        vbox.PackStart(_digitButton, false, false, 0);
+        vbox.PackStart(_acceptButton, false, false, 0);
 
         Add(vbox);
         ShowAll();
     }
 
-    private static void Main()
+    private static void Main(string[] args)
     {
+        Console.WriteLine("Password Generator v1.2");
+        //if (args[0] == "-a")
+            //Console.WriteLine(GeneratePassword());
         Application.Init();
-
-        new PasswordGeneratorApp();
-
+        var app = new _PasswordGenerator();
+        app.Resizable = false;
+        app.DeleteEvent += delegate
+        { 
+            Application.Quit();
+        };
         Application.Run();
     }
 
-    private void DeleteWindowEvent(object o, EventArgs args)
+    private static void DeleteWindowEvent(object o, EventArgs args)
     {
         Application.Quit();
         Console.WriteLine("App closed");
     }
 
-    private void Gen(object? o, EventArgs? args)
+    private void GeneratePassword(object? o, EventArgs? args)
     {
-        if (DigitButton.Active)
-        {
-            AreDigits = true;
-        }
-        else
-        {
-            AreDigits = false;
-        }
-
-        if (SignButton.Active)
-        {
-            AreSigns = true;
-        }
-        else
-        {
-            AreSigns = false;
-        }
-
-        if (HighButton.Active)
-        {
-            AreHighRegister = true;
-        }
-        else
-        {
-            AreHighRegister = false;
-        }
-
-
-        lenght = Convert.ToInt32(lenghtEntry.Value);
-        string genpass = "";
-        if (AreHighRegister) chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        else chars = "abcdefghijklmnopqrstuvwxyz";
-        if (AreDigits) chars += "0123456789";
-        else chars = "abcdefghijklmnopqrstuvwxyz";
-        if (AreSigns) chars += "()/*-+?№!@#$%^&*_=<>[]{}:;,.";
-        else chars = "abcdefghijklmnopqrstuvwxyz";
-
-        if (AreHighRegister)
+        if (_settings[2])
             chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-        if (AreDigits)
+        if (_settings[0])
             chars += "0123456789";
-
-        if (AreSigns)
+        if (_settings[1])
             chars += "()/*-+?№!@#$%^&*_=<>[]{}:;,.";
 
+        var random = new Random();
         char[] charArray = chars.ToCharArray();
+        string genPass = "";
 
-        for (int i = 1; i <= lenght; i++)
+        for (var i = 1; i <= _lenght; i++)
         {
-            genpass = genpass + charArray[rand.Next(0, chars.Length)];
+            genPass += charArray[random.Next(0, chars.Length)];
         }
-
-        password.Text = genpass;
+        _password.Text = genPass;
     }
 }
-
-
