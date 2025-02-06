@@ -1,2 +1,0 @@
-/home/ruzen42/Programing/CSharp/PasswordGenerator/win/PasswordGenerator.pdb
-/home/ruzen42/Programing/CSharp/PasswordGenerator/win/PasswordGenerator.exe
