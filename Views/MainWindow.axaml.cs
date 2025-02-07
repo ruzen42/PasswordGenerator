@@ -20,12 +20,19 @@ public partial class MainWindow : Window
         _generatedPassword = "";
 
         if (Numbers.IsChecked == true)
-            _chars += "123456789";
+            _chars += "0123456789";
+
+        if (Letters.IsChecked == true)
+            _chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        
+        if (Signs.IsChecked == true)
+            _chars += "!@#$%^&*(){}|_+?/*-+";
             
         for ( var i = 0; i < _size; i++ )
             _generatedPassword += _chars[_random.Next(_chars.Length)];
 
         Output.Text = _generatedPassword;
+        _chars = "abcdefghijklmnopqrstuvwxyz";
     }
 
     private void Copy_OnClick(object? sender, RoutedEventArgs e)
