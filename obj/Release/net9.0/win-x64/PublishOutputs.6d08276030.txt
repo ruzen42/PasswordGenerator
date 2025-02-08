@@ -1,0 +1,5 @@
+/home/ruzen42/Programming/PasswordGenerator/win/PasswordGenerator.pdb
+/home/ruzen42/Programming/PasswordGenerator/win/av_libglesv2.dll
+/home/ruzen42/Programming/PasswordGenerator/win/libHarfBuzzSharp.dll
+/home/ruzen42/Programming/PasswordGenerator/win/libSkiaSharp.dll
+/home/ruzen42/Programming/PasswordGenerator/win/PasswordGenerator.exe

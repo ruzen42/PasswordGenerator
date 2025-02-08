@@ -19,6 +19,8 @@ public partial class MainWindow : Window
     {
         _generatedPassword = "";
 
+        _size = Convert.ToInt32(NumericUpDown.Text);
+        
         if (Numbers.IsChecked == true)
             _chars += "0123456789";
 
@@ -37,7 +39,7 @@ public partial class MainWindow : Window
 
     private void Copy_OnClick(object? sender, RoutedEventArgs e)
     {
-        if (_generatedPassword.Length > 0)
-           Clipboard?.SetTextAsync(_generatedPassword);
+        if (Output.Text != null)
+           Clipboard?.SetTextAsync(Output.Text);
     }
 }

@@ -1,0 +1,4 @@
+/home/ruzen42/Programming/PasswordGenerator/win/PasswordGenerator.pdb
+/home/ruzen42/Programming/PasswordGenerator/win/libHarfBuzzSharp.so
+/home/ruzen42/Programming/PasswordGenerator/win/libSkiaSharp.so
+/home/ruzen42/Programming/PasswordGenerator/win/PasswordGenerator
