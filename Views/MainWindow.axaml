@@ -4,7 +4,7 @@
         xmlns:vm="using:PasswordGenerator.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="220" d:DesignHeight="250"
+        mc:Ignorable="d" d:DesignWidth="220" d:DesignHeight="180"
         x:Class="PasswordGenerator.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/passgen.ico"
@@ -21,15 +21,15 @@
     
     <StackPanel>
         
-        <Border Margin="10" CornerRadius="10" Background="MediumAquamarine">
-            <TextBlock Text="Password Generator" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black"/>
+        <Border Margin="1" CornerRadius="5" Background="DodgerBlue">
+            <TextBlock Text="Password Generator v1.3" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         </Border>
         
-        <Border Margin="10" CornerRadius="10" Background="DarkSlateGray">
-            <TextBox Watermark="Password will be here"  x:Name="Output"></TextBox>
+        <Border Margin="10" CornerRadius="10" Background="DodgerBlue">
+            <TextBox Watermark="Password will be here"  x:Name="Output" Foreground="WhiteSmoke"></TextBox>
         </Border>
         
-        <ButtonSpinner x:Name="Spinner" Margin="10" ButtonSpinnerLocation="Left" Content="12" Opacity="10"/>
+        <!--<ButtonSpinner x:Name="Spinner" Margin="10" ButtonSpinnerLocation="Left" Content="12" Opacity="10"/> -->
         
         <Grid ShowGridLines="False" Margin="10" 
               ColumnDefinitions="80, 120" 
@@ -37,11 +37,11 @@
             <Label Grid.Row="0" Grid.Column="0">Signs</Label>
             <Label Grid.Row="1" Grid.Column="0">Numbers</Label>
             <Label Grid.Row="2" Grid.Column="0" Content="Letters"/>
-            <ToggleButton x:Name="Signs" IsEnabled="True" Grid.Column="1" Grid.Row="0">✓</ToggleButton>
-            <ToggleButton x:Name="Numbers" IsEnabled="True" Grid.Column="1" Grid.Row="1">✓</ToggleButton>
-            <ToggleButton x:Name="Letters" IsEnabled="True" Grid.Column="1" Grid.Row="2">✓</ToggleButton>
-            <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Button_OnClick" Content="Generate"/>
-            <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Copy_OnClick" Content="Copy"/>
+            <ToggleButton  Background="Black" BorderBrush="WhiteSmoke" x:Name="Signs" IsEnabled="True" Grid.Column="1" Grid.Row="0">✓</ToggleButton>
+            <ToggleButton Background="Black" BorderBrush="WhiteSmoke" x:Name="Numbers" IsEnabled="True" Grid.Column="1" Grid.Row="1">✓</ToggleButton>
+            <ToggleButton Background="Black" BorderBrush="WhiteSmoke" x:Name="Letters" IsEnabled="True" Grid.Column="1" Grid.Row="2">✓</ToggleButton>
+            <Button Background="Black" BorderBrush="WhiteSmoke" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Button_OnClick" Content="Generate"/>
+            <Button Background="Black" BorderBrush="WhiteSmoke" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Copy_OnClick" Content="Copy"/>
         </Grid>
     </StackPanel>
 </Window>
